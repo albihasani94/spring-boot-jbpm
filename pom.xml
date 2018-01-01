@@ -22,6 +22,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
+		<jbpm.version>6.4.0.Final</jbpm.version>
 	</properties>
 
 	<dependencies>
@@ -47,8 +48,23 @@
         <dependency>
             <groupId>org.kie</groupId>
             <artifactId>kie-internal</artifactId>
-            <version>6.4.0.Final</version>
+            <version>${jbpm.version}</version>
         </dependency>
+		<dependency>
+			<groupId>org.jbpm</groupId>
+			<artifactId>jbpm-services-api</artifactId>
+			<version>${jbpm.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jbpm</groupId>
+			<artifactId>jbpm-kie-services</artifactId>
+			<version>${jbpm.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.kie</groupId>
+			<artifactId>kie-spring</artifactId>
+			<version>${jbpm.version}</version>
+		</dependency>
     </dependencies>
 
 	<build>
